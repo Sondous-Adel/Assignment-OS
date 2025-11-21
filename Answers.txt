@@ -1,0 +1,45 @@
+EX1:
+This program shows how a parent process can create a child process. When fork() runs:
+the child process gets pid = 0 and prints its PID
+the parent process gets the child’s PID (pid > 0) and prints its own PID
+If fork() fails, it returns a negative value
+
+
+EX2:
+sleep 300 & runs the sleep command for 300 seconds in the background, allowing you to continue using the terminal
+jobs shows all currently running background processes
+
+
+EX3:
+ps aux | grep sleep finds the PID of the sleep process
+kill <PID> stops the process completely
+kill -STOP <PID> pauses it; kill -CONT <PID> resumes it
+
+
+EX4:
+kill -STOP <PID> Pause a process
+kill -CONT <PID> Resume the process
+
+
+
+EX5:
+The linker connects separate .c files so functions in one file can be used in another
+After compiling and linking, running the program prints: "Hello from file1!"
+
+
+EX6:
+The loader prepares the program for execution: it loads the executable into memory, sets up the stack/heap, and links required shared libraries
+ldd shows which libraries the program uses dynamically at runtime
+
+
+Linker Job:
+Combining multiple object files into a single executable
+Filling in memory addresses for all functions and variables
+Making sure the program can run as one complete application
+
+
+Loader Job:
+Loading the executable into memory
+Loading required shared libraries dynamically
+Passing program arguments and starting execution at main()
+
